@@ -2,8 +2,8 @@
 
 A Hello World TeamCity Kotlin pipeline with sane defaults including:
 
-- triggers on push to any branch
-- disables build setting changes through the UI
-- posts status checks to GitHub (requires a personal access token set in `%github.access.token%`)
-- enables the status widget
-- runs on Linux agents
+- trigger on push to any branch
+- disable build setting changes through the UI
+- post status checks to GitHub (requires the parameter `%github.access.token%` be set to a personal access token)
+- enable the status widget
+- run on Linux agents only
