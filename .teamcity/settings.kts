@@ -33,11 +33,14 @@ project {
         param("teamcity.ui.settings.readOnly", "true")
     }
 
+    template(CommonTemplate)
     buildType(CI)
 }
 
-object CI : BaseBuildType({
+object CI : BuildType({
     name = "CI"
+
+    templates(CommonTemplate)
 
     steps {
         script {
